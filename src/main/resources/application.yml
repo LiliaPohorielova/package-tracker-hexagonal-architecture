@@ -1,0 +1,18 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: package-tracker-hexagonal
+  datasource:
+    username: 'postgres'
+    url: jdbc:postgresql://localhost:5432/packages
+    password: 'root'
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: 'true'
+    hibernate:
+      ddl-auto: update
+    show-sql: true
